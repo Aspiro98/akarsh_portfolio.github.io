@@ -1,0 +1,485 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+.skill img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    padding: 20px;
+}
+
+.skill img:hover {
+    transform: scale(1.1); 
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.project-card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project-card {
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #00ff089e;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    text-align: center;
+}
+
+.text a {
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.text p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* styles.css */
+
+/* styles.css */
+
+/* styles.css */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.contact-card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    position: relative;
+    width: 22%;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.circle {
+    width: 80px; /* Adjust size as needed */
+    height: 80px;
+    background-color: #23c728;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+}
+
+.available-section {
+    position: relative;
+    background: url('images/job.jpg') no-repeat center center/cover;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.available-section .available-overlay {
+    position: absolute;
+    background: rgba(124, 243, 88, 0.885); /* Adjust color and opacity as needed */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.available-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.available-section .available-highlight {
+    color: #0059ff;
+}
+
+.available-section .btn {
+    background-color: #0059ff;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.available-section .btn:hover {
+    background-color: #0056b3;
+}
+
+.contact-card .card-body {
+    padding: 0;
+}
+
+.contact-card .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-card .card-text {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.contact-card .card-text a {
+    text-decoration: none;
+    color: #23c728;
+}
+
+
+
+
+
+header.gradient-bg {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .circle {
+    background: linear-gradient(90deg, #09ff00, #fbff00);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+header .logo-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header h1 {
+    flex-grow: 1;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-item .nav-link:hover, .nav-item .nav-link.active {
+    color: #ffeb3b;
+    font-weight: bold;
+}
+
+.d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; 
+}
+
+.ftco-about ul.about-info {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.ftco-about ul.about-info li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.ftco-about ul.about-info li .info-label {
+    min-width: 130px;
+    font-weight: 600;
+    color: #000000;
+}
+.ftco-about ul.about-info li .info-value {
+    color: rgba(0, 0, 0, 0.484);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    width: 100%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+    height: 100%;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.card:nth-child(odd) {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.card:nth-child(even) {
+    animation: slideInRight 1s ease-in-out;
+}
+
+#about {
+    margin-bottom: 2rem;
+}
+
+#about .card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#about .card-img {
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+#about .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.btn-download-cv {
+    background-color: #23c728;;
+    border: none;
+    border-radius: 20px;
+    width: 170px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-download-cv:hover {
+    background-color: #00ff08;;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #23c728;
+    padding: 10px;
+}
+
+.education-card {
+    margin-bottom: 20px;
+}
+
+.education-icon {
+    background-color: #23c728;;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.education-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.card-date {
+    color: #23c728;;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.card-university {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text strong {
+    font-weight: bold;
+    color: #555;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 1rem 0;
+}
