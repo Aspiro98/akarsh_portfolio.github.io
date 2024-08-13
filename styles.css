@@ -165,7 +165,7 @@ body {
 
 .available-section .available-overlay {
     position: absolute;
-    background: rgba(124, 243, 88, 0.885); /* Adjust color and opacity as needed */
+    background: rgba(124, 243, 88, 0.885);
     width: 100%;
     height: 100%;
     display: flex;
