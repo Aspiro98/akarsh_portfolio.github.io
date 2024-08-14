@@ -263,14 +263,34 @@ header h1 {
     flex-grow: 1;
 }
 
-.nav-item .nav-link {
-    color: #fff;
-    transition: color 0.3s;
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
 }
 
-.nav-item .nav-link:hover, .nav-item .nav-link.active {
-    color: #ffeb3b;
-    font-weight: bold;
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a.active {
+    background-color: #fff;
+    color: #2C2C54 !important;
+    font-weight: bolder;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .d-flex {
